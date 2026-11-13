@@ -1,0 +1,62 @@
+{
+  "configVersion": 1,
+  "homeUrl": "https://muse.ai",
+  "newThreadUrl": "https://muse.ai/thread/new",
+  "minImageSize": 256,
+  "sendWithEnter": false,
+  "selectors": {
+    "chatInput": "textarea[aria-label=\"Message\"], textarea[placeholder=\"Message\"], textarea[placeholder*=\"Nhắn tin\"], div[contenteditable=\"true\"][role=\"textbox\"], textarea[placeholder*=\"Nhắn tin\"], div[contenteditable=\"true\"][aria-placeholder*=\"Nhắn tin\"], [contenteditable=\"true\"][data-placeholder*=\"Nhắn tin\"], textarea[placeholder*=\"Message\" i], textarea, div[contenteditable=\"true\"]",
+    "fileInput": "input[type=\"file\"]",
+    "attachButton": "button[aria-label=\"Attach file\"], button[aria-label*=\"ttach\" i], button[aria-label*=\"đính kèm\" i], button[aria-label*=\"Thêm\" i], button[aria-label*=\"upload\" i], button[aria-label*=\"tải lên\" i], div[role=\"button\"][aria-label*=\"ttach\" i], div[role=\"button\"][aria-label*=\"Thêm\" i]",
+    "attachMenuItem": "[role=\"menuitem\"]:has-text(\"ảnh\"), [role=\"menuitem\"]:has-text(\"Tải lên\"), [role=\"menuitem\"]:has-text(\"Upload\"), [role=\"menuitem\"]:has-text(\"photo\"), [role=\"menuitem\"]:has-text(\"file\")",
+    "attachmentPreview": "[aria-label*=\"Remove\" i], [aria-label*=\"Xóa\" i], [aria-label*=\"Gỡ\" i], [data-testid*=\"attachment\" i]",
+    "uploadingIndicator": "[role=\"progressbar\"], [aria-busy=\"true\"], [aria-label*=\"Uploading\" i], [aria-label*=\"Đang tải\" i]",
+    "sendButton": "button[aria-label*=\"Send\" i], button[aria-label*=\"Gửi\" i], div[role=\"button\"][aria-label*=\"Send\" i], div[role=\"button\"][aria-label*=\"Gửi\" i], button[type=\"submit\"]",
+    "stopButton": "button[aria-label*=\"Stop\" i], button[aria-label*=\"Dừng\" i], div[role=\"button\"][aria-label*=\"Stop\" i], div[role=\"button\"][aria-label*=\"Dừng\" i]",
+    "generatingIndicator": "[data-message-role=\"assistant\"][aria-busy=\"true\"], [data-message-role=\"assistant\"] [aria-busy=\"true\"], [aria-label*=\"Generating\" i], [aria-label*=\"Đang tạo\" i], [aria-label*=\"Typing\" i], [data-testid*=\"typing\" i], [data-testid*=\"loading\" i]",
+    "assistantMessage": "[data-message-role=\"assistant\"]",
+    "userMessage": "[data-message-role=\"user\"]",
+    "downloadButton": "a[download], button[aria-label*=\"Download\" i], button[aria-label*=\"Tải xuống\" i], div[role=\"button\"][aria-label*=\"Download\" i], div[role=\"button\"][aria-label*=\"Tải xuống\" i]",
+    "loginHint": "input[type=\"email\"], input[type=\"tel\"], input[type=\"password\"], input[name=\"email\"], input[autocomplete=\"username\"]",
+    "excludeMediaHint": "[data-hatch-media-owner=\"avatar-layer\"], [data-hatch-avatar-layer], [aria-label=\"Muse avatar\"], [alt*=\"avatar\" i]"
+  },
+  "loginTextPatterns": [
+    "Đăng nhập",
+    "Log in",
+    "Login",
+    "Sign in",
+    "Continue with Facebook",
+    "Tiếp tục với"
+  ],
+  "quotaPatterns": [
+    "hạn mức",
+    "limit reached",
+    "try again later",
+    "out of credits",
+    "quota",
+    "đạt giới hạn",
+    "thử lại sau"
+  ],
+  "uiNoisePatterns": [
+    "^Muse có thể mắc lỗi",
+    "^Muse can make mistakes",
+    "^Nhắn tin$",
+    "^Sao chép$",
+    "^Copy$"
+  ],
+  "timings": {
+    "inputWaitMs": 20000,
+    "afterNavigateMs": 1500,
+    "afterAttachMs": 3000,
+    "uploadTimeoutMs": 90000,
+    "pollMs": 2000,
+    "stableMs": 6000,
+    "echoGraceMs": 3000,
+    "textTimeoutMs": 180000,
+    "imageTimeoutMs": 360000,
+    "videoTimeoutMs": 2400000,
+    "imageNoMediaGiveUpMs": 120000,
+    "videoNoMediaGiveUpMs": 0,
+    "downloadTimeoutMs": 60000
+  }
+}
